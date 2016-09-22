@@ -1,0 +1,75 @@
+<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:weld="http://jboss.org/schema/weld/beans"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd http://jboss.org/schema/weld/beans http://jboss.org/schema/weld/beans_1_1.xsd"
+	bean-discovery-mode="all">
+	<!-- Add more exclusions of com.objective if needed. -->
+	<interceptors>
+		<class>com.pkmn.db.TransactionInterceptor</class>
+	</interceptors>
+	<weld:scan>
+		<weld:exclude name="antlr.**" />
+
+		<weld:exclude name="com.fasterxml.**" />
+		<weld:exclude name="com.foundationdb.**" />
+		<weld:exclude name="com.google.**" />
+		<weld:exclude name="com.mchange.**" />
+		<weld:exclude name="com.sun.**" />
+		<weld:exclude name="com.sun.jdi.**" />
+		<weld:exclude name="com.thoughtworks.**" />
+		<weld:exclude name="cryptix.**" />
+		<weld:exclude name="com.fasterxml.**" />
+		<weld:exclude name="com.foundationdb.**" />
+		<weld:exclude name="com.google.**" />
+		<weld:exclude name="com.mchange.**" />
+		<weld:exclude name="com.microsoft.sqlserver.**" />
+		<weld:exclude name="com.novell.**" />
+		<weld:exclude name="com.objective.dbpersistence.**" />
+		<weld:exclude name="com.objective.ecm.service.base.sample.*" />
+		<weld:exclude name="com.objective.ecm.service.stat.data.**" />
+		<weld:exclude name="com.objective.entity.**" />
+		<weld:exclude name="com.objective.hibernate.**" />
+		<weld:exclude name="com.sun.**" />
+		<weld:exclude name="com.sun.jdi.**" />
+		<weld:exclude name="com.thoughtworks.**" />
+		<weld:exclude name="cryptix.**" />
+		<weld:exclude name="io.undertow.**" />
+
+		<weld:exclude name="java.awt.**" />
+		<weld:exclude name="javax.**" />
+		<weld:exclude name="javassist.**" />
+		<weld:exclude name="jersey.**" />
+
+
+		<weld:exclude name="oracle.**" />
+		<weld:exclude name="org.fusesource.**" />
+		<weld:exclude name="org.hibernate.**" />
+		<weld:exclude name="org.apache.activemq.**" />
+		<weld:exclude name="org.apache.commons.**" />
+		<weld:exclude name="org.apache.http.**" />
+		<weld:exclude name="org.apache.log4j.**" />
+		<weld:exclude name="org.codehaus.**" />
+		<weld:exclude name="org.dom4j.**" />
+		<weld:exclude name="org.eclipse.**" />
+		<weld:exclude name="org.glassfish.**" />
+		<weld:exclude name="org.hamcrest.**" />
+		<weld:exclude name="org.hsqldb.**" />
+		<weld:exclude name="org.jacorb.**" />
+		<weld:exclude name="org.jboss.**" />
+		<weld:exclude name="org.jvnet.**" />
+		<weld:exclude name="org.objectweb.**" />
+		<weld:exclude name="org.omg.**" />
+		<weld:exclude name="org.quartz.**" />
+		<weld:exclude name="org.reflections.**" />
+		<weld:exclude name="org.slf4j.**" />
+		<weld:exclude name="org.terracotta.**" />
+		<weld:exclude name="org.xmlpull.**" />
+		<weld:exclude name="org.xnio.**" />
+
+		<weld:exclude name="netscape.**" />
+		<weld:exclude name="net.sf.cglib.**" />
+		<weld:exclude name="net.sourceforge.jtds.**" />
+
+		<weld:exclude name="xjava.**" />
+	</weld:scan>
+</beans>

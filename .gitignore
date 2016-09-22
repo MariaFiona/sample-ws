@@ -1,0 +1,12 @@
+dist
+target
+.settings
+.project
+.classpath
+*.sh
+*.log
+*.jks
+*.jar
+/test-output/
+pom.xml.orig
+/mybuild.txt

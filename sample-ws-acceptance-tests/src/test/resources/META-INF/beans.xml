@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:weld="http://jboss.org/schema/weld/beans"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd http://jboss.org/schema/weld/beans http://jboss.org/schema/weld/beans_1_1.xsd"
+	bean-discovery-mode="all">
+
+	<weld:scan>
+		<weld:exclude name="org.hibernate.**" />
+		<weld:exclude name="javax.**" />
+		<weld:exclude name="org.apache.log4j.**" />
+		<weld:exclude name="org.slf4j.**" />
+	</weld:scan>
+</beans>
